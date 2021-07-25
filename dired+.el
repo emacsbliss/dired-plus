@@ -11907,8 +11907,9 @@ non-empty directories is allowed."
 ;; 1. Display a message to warn that marked, not flagged, files will be deleted.
 ;; 2. Use `diredp-internal-do-deletions', so it works with all Emacs versions.
 ;;
+;; disable this function since somehow it doesn't work with Emacs 28
 ;;;###autoload
-(defun dired-do-delete (&optional arg)  ; Bound to `D'
+(defun dired-do-delete-disabled (&optional arg)  ; Bound to `D'
   "Delete all marked (or next ARG) files.
 NOTE: This deletes marked, not flagged, files.
 `dired-recursive-deletes' controls whether deletion of
